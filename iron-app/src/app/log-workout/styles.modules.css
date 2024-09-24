@@ -1,0 +1,48 @@
+.dropdown {
+    position: relative;
+}
+
+.menu {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    z-index: 1;
+    margin: 0 -18vw;
+    padding: 2rem;
+
+    border: 1px solid grey;
+    background-color: rgb(59, 55, 55);
+    /* height: 10vh; */
+    width: 40vw;
+}
+
+.content-box {
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 1rem 0;
+    width: 80vw;
+    min-height: 20vh;
+}
+
+button.select-workout {
+    background-color: blue;
+    
+}
+
+button {
+    transition-duration: 0.4s;
+    border-radius: 8px;
+    font-size: large;
+    height: 3rem;
+    width: 10rem;
+}
+
+button:hover {
+    background-color:  black;
+}
