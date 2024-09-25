@@ -4,6 +4,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { workouts as staticWorkouts } from "../static-resources/static-workouts";
 import "./styles.modules.css";
+import logExcerciseField from "@/components/logExcerciseInput";
 
 export default function Page() {
   const [date, SetDate] = useState(new Date());
@@ -49,8 +50,11 @@ export default function Page() {
               />
             </label>
             {selectedWorkout.excercises.map((excercise) => (
-              <label>{excercise.name}</label>
+              logExcerciseField(excercise.name, excercise.repetitions)
             ))}
+            {/* {selectedWorkout.excercises.map((excercise) => (
+              <label>{excercise.name}</label>
+            ))} */}
           </>
         )}
       </div>

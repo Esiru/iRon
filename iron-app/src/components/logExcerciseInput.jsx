@@ -2,10 +2,20 @@ export default function logExcerciseField(name, expectedRepetitions) {
     return (
       <>
         <div className="log-excercise-field">
-          <label>{name}</label>
-          <input 
-            defaultValue={expectedRepetitions} 
-            pattern={"[0-9]*"} />
+          {name}
+          <label>
+            Repetitions
+            <input
+              defaultValue={expectedRepetitions}
+            type={"number"}
+            />
+          </label>
+          <label>
+            Weight
+            <input
+            type={"number"}
+            />
+          </label>
         </div>
       </>
     );
