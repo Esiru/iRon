@@ -1,12 +1,15 @@
 "use client"
 import { useSearchParams } from "next/navigation"
+import { workouts as staticWorkouts } from "../static-resources/static-workouts"
+import WorkoutCard from "@/components/workoutCard"
 
 export default function Page() {
     const searchParams = useSearchParams()
     const id = searchParams.get("id")
+    const workout = staticWorkouts[id-1]
     return (
     <>
-        <p>Hello, this is a workout page for workout associated with id {id}</p>
+        <WorkoutCard name={workout.name} type={workout.type} id={workout.id} excercises={workout.excercises}/>
     </>
     )
 }

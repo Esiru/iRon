@@ -1,4 +1,4 @@
-export default function logExcerciseField(name, expectedRepetitions) {
+export default function LogExcerciseField(name, expectedRepetitions) {
     return (
       <>
         <div className="log-excercise-field">
