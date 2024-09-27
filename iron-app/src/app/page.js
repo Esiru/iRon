@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
 import WorkoutPreview from "@/components/workoutPreview";
 import { workouts as staticWorkouts} from "./static-resources/static-workouts";
 
