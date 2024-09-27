@@ -1,11 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
+import WorkoutPreview from "@/components/workoutPreview";
+import { workouts as staticWorkouts} from "./static-resources/static-workouts";
 
 export default function Home() {
+  const workouts = staticWorkouts
+  
   return (
     <>
-      <h3>Hello, welcome to iRon</h3>
-      <Link href="/log-workout">Log workout</Link>
+
+      {workouts.map((workout) => (
+        <WorkoutPreview name={workout.name} type={workout.type} id={workout.id} excercises={workout.excercises}/>
+      ))}
+      {/* {<h3>Hello, welcome to iRon</h3>
+      <Link href="/log-workout">Log workout</Link>} */}
     </>
   );
 }
