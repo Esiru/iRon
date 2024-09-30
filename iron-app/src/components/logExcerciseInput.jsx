@@ -1,6 +1,5 @@
-export default function LogExcerciseField(name, expectedRepetitions) {
-    return (
-      <>
+export default function LogExcerciseField({name, expectedRepetitions}) {
+    return ( 
         <div className="log-excercise-field">
           {name}
           <label>
@@ -17,6 +16,5 @@ export default function LogExcerciseField(name, expectedRepetitions) {
             />
           </label>
         </div>
-      </>
     );
 }
