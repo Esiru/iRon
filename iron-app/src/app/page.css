@@ -7,8 +7,33 @@ body {
 }
 
 .workout-preview {
+  margin: 1rem 0;
   border-radius: 4px;
   background-color: grey;
+}
+
+.workout-preview a:link, .workout-preview a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.excercises-list {
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.excercises-list h4 {
+  display: inline-block;
+  margin-right: 1rem;
+  white-space: nowrap;
+}
+
+.workout-preview-list {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
 }
 
 @media (prefers-color-scheme: dark) {

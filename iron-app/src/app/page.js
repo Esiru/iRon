@@ -6,12 +6,16 @@ export default function Home() {
   
   return (
     <>
-
-      {workouts.map((workout) => (
-        <WorkoutPreview name={workout.name} type={workout.type} id={workout.id} excercises={workout.excercises}/>
-      ))}
-      {/* {<h3>Hello, welcome to iRon</h3>
-      <Link href="/log-workout">Log workout</Link>} */}
+      <div className={"workout-preview-list"}>
+        {workouts.map((workout) => (
+          <WorkoutPreview
+            name={workout.name}
+            type={workout.type}
+            id={workout.id}
+            excercises={workout.excercises}
+          />
+        ))}
+      </div>
     </>
   );
 }
