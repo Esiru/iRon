@@ -1,5 +1,5 @@
 body {
-  width: 90vw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -7,9 +7,14 @@ body {
 }
 
 .workout-preview {
-  margin: 1rem 0;
+  margin: 1rem 1rem 0 0;
   border-radius: 4px;
-  background-color: grey;
+  width: 40vw;
+  background-color: rgb(12, 12, 12);
+}
+
+.workout-preview * {
+  margin-left: 1rem;
 }
 
 .workout-preview a:link, .workout-preview a:visited {
@@ -25,15 +30,17 @@ body {
 }
 
 .excercises-list h4 {
-  display: inline-block;
-  margin-right: 1rem;
+  display: grid;
   white-space: nowrap;
 }
 
 .workout-preview-list {
   display: flex;
-  flex-direction: column;
-  max-width: 100%;
+  flex-direction: row;
+  width: 95vw;
+  overflow: auto;
+  margin-left: 1rem;
+  justify-content: space-between;
 }
 
 @media (prefers-color-scheme: dark) {

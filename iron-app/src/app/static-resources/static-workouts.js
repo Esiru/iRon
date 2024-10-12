@@ -23,4 +23,13 @@ export let workouts = [
       { name: "Tricep pushdown", type: "Push", repetions: 8, superSet: true}
     ],
   },
+  {
+    id: 3,
+    name: "Long run",
+    type: "Cardio",
+    excercises: [
+      { name: "Short sprints", type: "Warm up", repetitions: 3, distance: 100 },
+      { name: "Long-distance run", type: "Run", distance: 8, unitOfDistance: "KM", goalPacePerUnit: 7.30},
+    ],
+  },
 ];

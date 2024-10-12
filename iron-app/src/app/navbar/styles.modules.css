@@ -1,5 +1,10 @@
 .navbar {
-    background-color: black;
-    height: 15vh;
+    background-color: rgb(12,12,12);
+    height: 7.5vh;
     width: 100vw;
+    align-items: center;
+}
+
+.navbar h3 {
+    margin-left: 1rem;
 }

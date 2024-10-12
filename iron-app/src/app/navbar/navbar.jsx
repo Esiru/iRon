@@ -6,7 +6,7 @@ export default function Navbar() {
     <>
       <div className="navbar">
         <Link href="/">
-          <h1>iRon</h1>
+          <h3>iRon</h3>
         </Link>
       </div>
     </>
