@@ -52,9 +52,6 @@ export default function Page() {
             {selectedWorkout.excercises.map((excercise) => (
               logExcerciseField(excercise.name, excercise.repetitions)
             ))}
-            {/* {selectedWorkout.excercises.map((excercise) => (
-              <label>{excercise.name}</label>
-            ))} */}
           </>
         )}
       </div>
