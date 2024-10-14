@@ -8,7 +8,7 @@ export default function WorkoutPreview({name, type, id, excercises}) {
         </Link>
         <div className="excercises-list">
           {excercises.map((excercise, index) => (
-            <h4 key={index}>{excercise.name}</h4>
+            <p key={index}>{excercise.name}</p>
           ))}
         </div>
       </div>
