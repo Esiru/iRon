@@ -2,6 +2,7 @@
 import { useSearchParams } from "next/navigation"
 import { workouts as staticWorkouts } from "../static-resources/static-workouts"
 import WorkoutCard from "@/components/workoutCard"
+import "./styles.modules.css"
 
 export default function Page() {
     const searchParams = useSearchParams()

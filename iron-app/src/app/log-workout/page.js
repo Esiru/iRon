@@ -1,24 +1,26 @@
-"use client";
-import React, { ReactElement, useState } from "react";
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
-import { workouts as staticWorkouts } from "../static-resources/static-workouts";
-import "./styles.modules.css";
-import logExcerciseField from "@/components/logExcerciseInput";
+"use client"
+import React, { ReactElement, useState } from "react"
+import DatePicker from "react-datepicker"
+import "react-datepicker/dist/react-datepicker.css"
+import { workouts as staticWorkouts } from "../static-resources/static-workouts"
+import "./styles.modules.css"
+import logExcerciseField from "@/components/logExcerciseInput"
+import {log as staticLog} from "../static-resources/static-log"
 
 export default function Page() {
-  const [date, SetDate] = useState(new Date());
+  const [date, SetDate] = useState(new Date())
   //TODO: consider outsourcing to Redux/Zustand
-  const [selectedWorkout, setSelectedWorkout] = useState(null);
-  const [open, setOpen] = useState(false);
+  const [selectedWorkout, setSelectedWorkout] = useState(null)
+  const [open, setOpen] = useState(false)
   //TODO: change data source to fetching
-  const workouts = staticWorkouts;
+  const workouts = staticWorkouts
+  const log = staticLog
 
   const handleChange = (e) => {
     console.log(e.target.value)
     setSelectedWorkout(workouts[e.target.value])
     setOpen(false)
-  };
+  }
 
   const handleOpen = () => {
     setOpen(!open)
@@ -56,5 +58,5 @@ export default function Page() {
         )}
       </div>
     </>
-  );
+  )
 }

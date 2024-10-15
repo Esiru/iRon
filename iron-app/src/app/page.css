@@ -4,7 +4,6 @@ body {
   flex-direction: column;
   align-items: start;
   margin: 0 auto;
-  padding-left: 1rem;
 }
 
 .workout-preview {
@@ -32,12 +31,21 @@ body {
   justify-content: space-between;
 }
 
+.workout-preview-category {
+  margin-left: 1rem;
+}
+
 .workout-preview-list {
   display: flex;
   flex-direction: row;
   width: 95vw;
   overflow: auto;
   justify-content: space-between;
+}
+
+.last-performed-row {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (prefers-color-scheme: dark) {

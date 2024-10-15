@@ -1,7 +1,8 @@
-export let workouts = [
+export let log = [
   {
-    id: 1,
-    date: Date("2024-10-02"),
+    workoutID: 1,
+    date: new Date("2024-10-02"),
+    logEntryID: 1,
     name: "Workout A",
     type: "Resistance",
     excercises: [
@@ -48,8 +49,9 @@ export let workouts = [
     ],
   },
   {
-    id: 2,
-    date: Date("2024-10-06"),
+    workoutID: 2,
+    date: new Date("2024-10-04"),
+    logEntryID: 2,
     name: "Workout B",
     type: "Resistance",
     excercises: [
@@ -96,8 +98,9 @@ export let workouts = [
     ],
   },
   {
-    id: 3,
-    date: Date("2024-10-06"),
+    workoutID: 1,
+    date: new Date("2024-10-06"),
+    logEntryID: 3,
     name: "Workout A",
     type: "Resistance",
     excercises: [

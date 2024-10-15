@@ -35,6 +35,10 @@ button.select-workout {
     
 }
 
+input {
+    width: 2rem;
+}
+
 button {
     transition-duration: 0.4s;
     border-radius: 8px;

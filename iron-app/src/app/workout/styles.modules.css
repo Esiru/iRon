@@ -1,0 +1,9 @@
+input {
+    width: 3rem;
+}
+
+.log-excercise-field {
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+}
