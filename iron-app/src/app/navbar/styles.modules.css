@@ -1,13 +1,40 @@
 .navbar {
-    background-color: rgb(12,12,12);
+    background-color: #1d3d72;
+    color: #b6ffff;
+    font-size: 2rem;
     height: 7.5vh;
     width: 100vw;
+    display: flex;
     align-items: center;
+    justify-content: space-around;
     overflow: hidden;
     position: fixed;
     bottom: 0;
+    z-index: 1;
 }
 
-.navbar h3 {
-    margin-left: 1rem;
+.navbar > * {
+    margin: 0rem, 3rem;
+}
+
+a {
+    color: #b6ffff;
+    text-decoration: none;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.home-page-button {
+    background-color: #2a5cac;
+    width: 5rem;
+    height: 5rem;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 2;
+    bottom: 0.5rem;
 }

@@ -1,0 +1,48 @@
+.login-form-wrapper {
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.login-form-wrapper > form {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form-wrapper > form > * {
+    margin-top: 0.5rem;
+}
+
+.login-form-wrapper > form > label {
+    text-transform: uppercase;
+}
+
+.login-form-wrapper > form > input, .login-form-wrapper > form > button {
+    padding: 0.5rem 0.5rem;
+}
+
+.login-form-wrapper > form > a {
+    
+    align-self: flex-end;
+    margin-bottom: 0.5rem;
+}
+
+.login-form-wrapper > form > button {
+    background-color: #2a5cac;
+    border: none;
+    border-radius: 0.2rem;
+}
+
+.signup-link > a, .login-form-wrapper > form > a {
+    color: white;
+    text-decoration: underline;
+}
+
+.signup-link {
+    display: flex;
+    justify-content: space-between;
+}

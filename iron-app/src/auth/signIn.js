@@ -10,12 +10,12 @@ export default function signIn(provider, formData) {
     const stateArray = formData[symbolKey];
     let email = stateArray.find((field) => field.name === "email")?.value;
     let password = stateArray.find((field) => field.name === "password")?.value;
+    console.log(email, password)
     // Compare formData with validCredentials for testing
     if (
       email === validCredentials.email &&
       password === validCredentials.password
     ) {
-      
       return "Sign-in successful!";
     } else {
       const error = new Error("Invalid credentials.");
