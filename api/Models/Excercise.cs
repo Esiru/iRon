@@ -7,15 +7,16 @@ namespace api.Models
     }
     public class StrengthExcercise : Excercise
     {
+        public int Sets { get; set; }
         public int Weight { get; set; }
         public int Repetitions { get; set; }
         public string? MuscleGroup { get; set; }
     }
     public class ConditioningExcercise : Excercise
     {
-        public int? GoalTime { get; set; }
-        public int? GoalPace { get; set; }
-        public int? GoalDistance { get; set; }
+        public int? Time { get; set; }
+        public int? AveragePace { get; set; }
+        public int? Distance { get; set; }
     }
 }
 
