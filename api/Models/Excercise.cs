@@ -1,4 +1,4 @@
-namespace iRon
+namespace api.Models
 {
     public class Excercise
     {
